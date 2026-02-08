@@ -5,7 +5,7 @@ import NavBar from './Components/NavBar'
 import About from './Pages/About'
 import Services from './Pages/Service'
 import Our_Website from './Pages/Our_Website'
-import { Contact } from './Pages/Contact'
+import  {Contact}  from './Pages/Contact'
 
 const App = () => {
   return (
@@ -15,10 +15,11 @@ const App = () => {
     
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/service" element={<Services />} />
         <Route path="/ourWebsite" element={<Our_Website />} />
-        <Route path="/conatct" element={<Contact />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
   )
